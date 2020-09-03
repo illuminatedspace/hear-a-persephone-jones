@@ -16,6 +16,7 @@
       "description": "Opens hello.html"
     }
   },
+  "permissions": ["storage"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
