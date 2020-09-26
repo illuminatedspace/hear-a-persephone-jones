@@ -9,9 +9,20 @@ changeColor.onclick = function (element) {
   let color = element.target.value;
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      //   code: 'document.body.style.backgroundColor = "' + color + '";',
       code:
-        'var logText = document.querySelector(".GameWidget-Log-Content").innerText; console.log("LAPRAS", logText)',
+        'var lastLog = ""; function playByPlay() {var logText = document.querySelector(".GameWidget-Log-Content").innerText; console.log("LAPRAS", logText); if (logText !== lastLog) { var synth = window.speechSynthesis; var toSay = new SpeechSynthesisUtterance(logText); synth.speak(toSay); lastLog = logText;}window.requestAnimationFrame(playByPlay);}window.requestAnimationFrame(playByPlay);',
     });
   });
 };
+
+// function playByPlay() {
+//     var logText = document.querySelector(".GameWidget-Log-Content").innerText; console.log("LAPRAS", logText);
+//     if (logText !== lastLog) {
+//         var synth = window.speechSynthesis;
+//         var toSay = new SpeechSynthesisUtterance(logText);
+//         synth.speak(toSay);
+//         lastLog = logText;
+//     }
+//     window.requestAnimationFrame(playByPlay);
+// }
+// window.requestAnimationFrame(playByPlay);
