@@ -9,7 +9,9 @@ changeColor.onclick = function (element) {
   let color = element.target.value;
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      code: 'document.body.style.backgroundColor = "' + color + '";',
+      //   code: 'document.body.style.backgroundColor = "' + color + '";',
+      code:
+        'var logText = document.querySelector(".GameWidget-Log-Content").innerText; console.log("LAPRAS", logText)',
     });
   });
 };
