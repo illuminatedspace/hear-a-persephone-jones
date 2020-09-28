@@ -1,12 +1,6 @@
 let changeColor = document.getElementById("changeColor");
 
-chrome.storage.sync.get("color", function (data) {
-  changeColor.style.backgroundColor = data.color;
-  changeColor.setAttribute("value", data.color);
-});
-
 changeColor.onclick = function (element) {
-  let color = element.target.value;
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
       code:
@@ -15,14 +9,26 @@ changeColor.onclick = function (element) {
   });
 };
 
-// function playByPlay() {
-//     var logText = document.querySelector(".GameWidget-Log-Content").innerText; console.log("LAPRAS", logText);
-//     if (logText !== lastLog) {
-//         var synth = window.speechSynthesis;
-//         var toSay = new SpeechSynthesisUtterance(logText);
-//         synth.speak(toSay);
-//         lastLog = logText;
-//     }
-//     window.requestAnimationFrame(playByPlay);
-// }
-// window.requestAnimationFrame(playByPlay);
+function modifyGameLog () {
+   var gameLogNode = document.querySelector(".GameWidget-Log-Content");
+   if (!gameLogNode) {
+     var mainNode = document.querySelector(".Main-Body");
+     gameLogNode = document.createElement("div");
+     newNode.className = "GameWidget-Log-Content";
+     mainNode.appendChild(newNode);
+   }
+   gameLogNode.innerText = Math.floor(Math.random()) * 10;
+   window.setTimeout(function () {modifyGameLog}, 30000)
+};
+var lastLog = "";
+function playByPlay() {
+    var logText = document.querySelector(".GameWidget-Log-Content").innerText; console.log("LAPRAS", logText);
+    if (logText !== lastLog) {
+        var synth = window.speechSynthesis;
+        var toSay = new SpeechSynthesisUtterance(logText);
+        synth.speak(toSay);
+        lastLog = logText;
+    }
+    window.requestAnimationFrame(playByPlay);
+}
+window.requestAnimationFrame(playByPlay);
