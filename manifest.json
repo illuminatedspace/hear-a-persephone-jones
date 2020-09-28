@@ -1,24 +1,16 @@
 {
-  "name": "Hello World",
-  "description": "Base Level Extension",
+  "name": "Blaseball with Persephone Jones",
   "version": "1.0",
-  "manifest_version": 2,
-  "browser_action": {
-    "default_popup": "hello.html",
-    "default_icon": "jazz.png"
-  },
-  "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F",
-        "mac": "MacCtrl+Shift+F"
-      },
-      "description": "Opens hello.html"
-    }
-  },
-  "permissions": ["storage"],
+  "description": "Build an Extension!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
-  }
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/jazz.png"
+  },
+  "manifest_version": 2
 }
