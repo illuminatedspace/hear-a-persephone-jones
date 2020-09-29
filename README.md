@@ -7,6 +7,7 @@
 Stretch Goals
 
 - choose which teams you want to follow in a prioritized list
+- choose voice
 
 ## Notes
 
