@@ -3,13 +3,13 @@
   "version": "1.0",
   "description": "Build an Extension!",
   "permissions": ["activeTab", "declarativeContent", "storage"],
-  "options_page": "options.html",
+  "options_page": "/options/options.html",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "page_action": {
-    "default_popup": "popup.html",
+    "default_popup": "/popup/popup.html",
     "default_icon": "images/jazz.png"
   },
   "manifest_version": 2

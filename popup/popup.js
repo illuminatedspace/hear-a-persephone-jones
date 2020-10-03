@@ -5,7 +5,7 @@ let debugButton = document.getElementById("debug");
 pauseButton.onclick = function (element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      file: "/functions/stop.js",
+      file: "/popup/functions/stop.js",
     });
   });
 };
@@ -13,7 +13,7 @@ pauseButton.onclick = function (element) {
 playButton.onclick = function (element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      file: "/functions/start.js",
+      file: "/popup/functions/start.js",
     });
   });
 };
@@ -21,7 +21,7 @@ playButton.onclick = function (element) {
 debugButton.onclick = function (element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      file: "/functions/debug.js",
+      file: "/popup/functions/debug.js",
     });
   });
 };
