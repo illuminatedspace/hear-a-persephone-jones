@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/popup/popup.css" />
   </head>
   <body>
-    <button id="debug">Debug</button>
-    <button id="play">Play</button>
-    <button id="pause">Pause</button>
+    <header>
+      <h1 id="title">Play By Play</h1>
+      <h2 id="subtitle" class="highlight-text">with Persephone Jones</h2>
+    </header>
+    <main>
+      <div id="controls">
+        <button id="play">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+            <path d="m0,0l0,14l14,-7l-14,-7l0,0z" fill="currentColor" />
+          </svg>
+        </button>
+        <button id="pause">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+            <rect height="14" width="14" fill="currentColor" />
+          </svg>
+        </button>
+        <input type="range" />
+      </div>
+      <p>Use keyboard shortcut Alt+Ctrl+B to open this window</p>
+      <button id="debug">Debug</button>
+    </main>
     <script src="popup.js"></script>
   </body>
 </html>

@@ -1,0 +1,73 @@
+/* 
+accent pink: FF017B
+accent yellow: FFEB57
+*/
+html {
+  width: 300px;
+  background: #000;
+  color: #fff;
+  /* border: 2px solid #ffeb57; */
+}
+body {
+  background: rgba(30, 30, 30, 0.64);
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li {
+  font-family: "Lora", "Courier New", monospace, serif;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#title {
+  display: inline;
+}
+
+#subtitle {
+  display: inline;
+}
+
+.highlight-text {
+  color: #ffeb57;
+}
+
+#play,
+#pause {
+  background-color: transparent;
+  border: none;
+  /* display: inline; */
+  color: #ff017b;
+}
+
+#controls {
+  display: flex;
+  /* height: 20px; */
+}
+
+p {
+  font-size: 10px;
+}
