@@ -3,7 +3,7 @@ accent pink: FF017B
 accent yellow: FFEB57
 */
 html {
-  width: 300px;
+  width: 350px;
   background: #000;
   color: #fff;
   /* border: 2px solid #ffeb57; */
@@ -19,18 +19,19 @@ h3,
 p,
 ol,
 ul,
-li {
+li,
+label {
   font-family: "Lora", "Courier New", monospace, serif;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   margin-right: 10px;
 }
 
 h2 {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 500;
   font-style: italic;
 }
@@ -65,9 +66,9 @@ header {
 
 #controls {
   display: flex;
-  /* height: 20px; */
 }
 
-p {
-  font-size: 10px;
+p,
+label {
+  font-size: 13px;
 }
