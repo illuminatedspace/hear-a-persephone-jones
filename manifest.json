@@ -10,7 +10,7 @@
   },
   "page_action": {
     "default_popup": "/popup/popup.html",
-    "default_icon": "images/jazz.png"
+    "default_icon": "images/microphone.png"
   },
   "manifest_version": 2
 }
