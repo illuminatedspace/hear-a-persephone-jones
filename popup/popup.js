@@ -6,7 +6,7 @@ let volumeSlider = document.getElementById("volume");
 pauseButton.onclick = function (element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      file: "/popup/functions/stop.js",
+      file: "/scripts/stop.js",
     });
   });
 };
@@ -14,7 +14,7 @@ pauseButton.onclick = function (element) {
 playButton.onclick = function (element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      file: "/popup/functions/start.js",
+      file: "/scripts/start.js",
     });
   });
 };
@@ -22,7 +22,7 @@ playButton.onclick = function (element) {
 debugButton.onclick = function (element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.tabs.executeScript(tabs[0].id, {
-      file: "/popup/functions/debug.js",
+      file: "/scripts/debug.js",
     });
   });
 };
@@ -30,8 +30,12 @@ debugButton.onclick = function (element) {
 volumeSlider.onchange = function (element) {
   console.log('ONCHANGE', element)
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    chrome.tabs.executeScript(tabs[0].id, {
-      file: "/popup/functions/volume.js",
+    chrome.tabs.sendMessage(tabs[0].id, {PJ_VOLUME: volume}, function(response) {
+      if(!response.PJ_VOLUME_UPDATED){
+        console.error("Volume Not Updated");
+      } else {
+        console.log("Volume update successful!");
+      }
     });
   });
 }
