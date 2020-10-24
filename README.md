@@ -4,17 +4,23 @@
 
 - Listen to Persophone Jones give you an audio play by play of Blaseball games for your favorite team
 
+### Next Release
+
 - [x] play, pause buttons
 - [x] test pop up with screen reader
 - [x] bump up font sizes. Everything's too small
-- [!] add keyboard shortcut for opening popup (STUCK)
-- [-] hook up volume slider
+- [x] hook up volume slider
+- [-] fix volume slider default value
 - [ ] restyle/continue styling
+- [ ] Confirm permissions of every page in manifest
 - [ ] Doesn't have to be active tab
 - [ ] go through manifest options https://developer.chrome.com/extensions/manifest
-
-- [ ] add button for opening options? (https://developer.chrome.com/extensions/manifest)
 - [x] Use this font: "Lora","Courier New",monospace,serif
+
+### BACKLOG
+
+- [!] add keyboard shortcut for opening popup (STUCK)
+- [ ] add button for opening options? (https://developer.chrome.com/extensions/manifest)
 
 - [ ] add keyboard shortcut change to options https://developer.chrome.com/extensions/manifest
 - [ ] Make microphone bigger, or get new icon
