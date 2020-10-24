@@ -66,9 +66,18 @@ header {
 
 #controls {
   display: flex;
+  justify-content: space-around;
 }
 
 p,
 label {
   font-size: 13px;
+}
+
+#volume-container {
+  display: flex;
+}
+
+#volume-container label {
+  align-self: center;
 }
