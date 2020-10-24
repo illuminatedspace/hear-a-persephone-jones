@@ -12,5 +12,12 @@
     "default_popup": "/popup/popup.html",
     "default_icon": "images/microphone.png"
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "commands": {
+    "_execute_page_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
+  }
 }
