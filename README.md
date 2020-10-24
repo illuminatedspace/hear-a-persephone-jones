@@ -10,11 +10,11 @@
 - [!] add keyboard shortcut for opening popup (STUCK)
 - [-] hook up volume slider
 - [ ] restyle/continue styling
-- [ ] go through manifest options https://developer.chrome.com/extensions/manifest
-- [ ] add button for opening options? (https://developer.chrome.com/extensions/manifest)
-
-- [x] Use this font: "Lora","Courier New",monospace,serif
 - [ ] Doesn't have to be active tab
+- [ ] go through manifest options https://developer.chrome.com/extensions/manifest
+
+- [ ] add button for opening options? (https://developer.chrome.com/extensions/manifest)
+- [x] Use this font: "Lora","Courier New",monospace,serif
 
 - [ ] add keyboard shortcut change to options https://developer.chrome.com/extensions/manifest
 - [ ] Make microphone bigger, or get new icon
@@ -23,6 +23,7 @@
 - [ ] Set voice to be different by default
 - [ ] Cute line to start the game, like "Let's Play Blall"
 - [ ] Make extension button only lit up on Blaseball site
+- [ ] Make extension take you to Blaseball page
 
 Stretch Goals
 
