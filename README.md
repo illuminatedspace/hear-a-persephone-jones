@@ -38,6 +38,7 @@ Stretch Goals
 - Choose which teams games you want to follow in a prioritized list
 - Read out who's on what bases. When bases are loaded
 - Sound effects
+- Visual effects: confetti for winning, peanut shells, birds, peanut weather, etc
 
 ## Notes
 
