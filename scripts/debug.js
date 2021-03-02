@@ -1,5 +1,6 @@
 console.log("DEBUG");
 function modifyGameLog() {
+  // need to add conditional to check and see if one exists
     var mainNode = document.querySelector(".Main-Body");
 
     var gameWidgetNode = document.createElement("div");
