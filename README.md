@@ -10,6 +10,8 @@
 - [x] test pop up with screen reader
 - [x] bump up font sizes. Everything's too small
 - [x] hook up volume slider
+- [x] post siesta fix
+- [ ] fix debug with new elements
 - [-] fix volume slider default value
 - [ ] restyle/continue styling
 - [ ] Confirm permissions of every page in manifest
