@@ -22,6 +22,7 @@
 
 ### BACKLOG
 
+- [ ] read game outcome
 - [!] add keyboard shortcut for opening popup (STUCK)
 - [ ] add button for opening options? (https://developer.chrome.com/extensions/manifest)
 
