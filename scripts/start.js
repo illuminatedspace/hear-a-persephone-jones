@@ -3,7 +3,7 @@ var lastLog = "";
 function playByPlay() {
   var firstGameWidget = document.querySelector(".GameWidget");
   var logTextArray = Array.from(firstGameWidget.querySelectorAll(".Widget-Log-Line"));
-  logLines = logTextArray.map(node => node.innerText);
+  var logLines = logTextArray.map(node => node.innerText);
 
   if (JSON.stringify(logLines) !== lastLog) {
     // get volume off window set by message event listener
