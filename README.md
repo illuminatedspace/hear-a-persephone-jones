@@ -14,7 +14,8 @@
 - [x] fix debug with new elements
 - [x] volume broken
 - [x] fix volume slider default value
-- [ ] restyle/continue styling
+- [x] restyle/continue styling
+- [ ] Set voice to be different by default
 - [ ] Confirm permissions of every page in manifest
 - [ ] Doesn't have to be active tab
 - [ ] go through manifest options https://developer.chrome.com/extensions/manifest
@@ -28,10 +29,8 @@
 
 - [ ] add keyboard shortcut change to options https://developer.chrome.com/extensions/manifest
 - [ ] Make microphone bigger, or get new icon
-- [ ] Read winner and score on game over
+
 - [ ] Read score when there's a score and at inning change
-- [ ] Set voice to be different by default
-- [ ] Cute line to start the game, like "Let's Play Blall"
 - [ ] Make extension button only lit up on Blaseball site
 - [ ] Make extension take you to Blaseball page
 
