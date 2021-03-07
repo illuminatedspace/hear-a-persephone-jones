@@ -12,8 +12,8 @@
 - [x] hook up volume slider
 - [x] post siesta fix
 - [x] fix debug with new elements
-- [ ] volume broken
-- [-] fix volume slider default value
+- [x] volume broken
+- [x] fix volume slider default value
 - [ ] restyle/continue styling
 - [ ] Confirm permissions of every page in manifest
 - [ ] Doesn't have to be active tab
