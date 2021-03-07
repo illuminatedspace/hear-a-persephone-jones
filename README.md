@@ -16,6 +16,7 @@
 - [x] fix volume slider default value
 - [x] restyle/continue styling
 - [x] Set voice to be different by default
+- [ ] Refactor all px to REM
 - [ ] Confirm permissions of every page in manifest
 - [ ] Doesn't have to be active tab
 - [ ] go through manifest options https://developer.chrome.com/extensions/manifest
