@@ -20,12 +20,15 @@
 - [ ] Doesn't have to be active tab
 - [ ] go through manifest options https://developer.chrome.com/extensions/manifest
 - [x] Use this font: "Lora","Courier New",monospace,serif
+- [ ] Write backstory
 
 ### BACKLOG
 
 - [ ] read game outcome
 - [!] add keyboard shortcut for opening popup (STUCK)
 - [ ] add button for opening options? (https://developer.chrome.com/extensions/manifest)
+- [ ] investigate other voices for default on other devices (Mac, linux?)
+- [ ] potentially move voice choosing to onStart?
 
 - [ ] add keyboard shortcut change to options https://developer.chrome.com/extensions/manifest
 - [ ] Make microphone bigger, or get new icon
