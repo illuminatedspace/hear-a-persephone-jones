@@ -3,37 +3,34 @@ accent pink: FF017B
 accent yellow: FFEB57
 */
 html {
-  width: 350px;
+  width: 25rem;
   background: #000;
   color: #fff;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   /* border: 2px solid #ffeb57; */
 }
 body {
-  background: rgba(30, 30, 30, 0.64);
+  /* background: rgba(30, 30, 30, 0.64); */
   border-radius: 5px;
+  padding: 20px;
+  border: solid rgba(30, 30, 30, 0.64) 2px;
 }
 
-h1,
-h2,
-h3,
-p,
-ol,
-ul,
-li,
-label {
+h1 {
   font-family: "Lora", "Courier New", monospace, serif;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 600;
   margin-right: 10px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   font-style: italic;
+  text-transform: uppercase;
 }
 
 header {
@@ -60,7 +57,6 @@ header {
 #pause {
   background-color: transparent;
   border: none;
-  /* display: inline; */
   color: #ff017b;
 }
 
@@ -71,10 +67,12 @@ main {
 #controls {
   display: flex;
   justify-content: space-around;
-  padding: 0 20px;
 }
 
 p,
 label {
-  font-size: 13px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 22px;
 }
