@@ -64,8 +64,14 @@ header {
   color: #ff017b;
 }
 
+main {
+  padding-bottom: 20px;
+}
+
 #controls {
   display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
 }
 
 p,
