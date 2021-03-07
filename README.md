@@ -11,7 +11,7 @@
 - [x] bump up font sizes. Everything's too small
 - [x] hook up volume slider
 - [x] post siesta fix
-- [-] fix debug with new elements
+- [x] fix debug with new elements
 - [ ] volume broken
 - [-] fix volume slider default value
 - [ ] restyle/continue styling
