@@ -7,34 +7,30 @@ html {
   background: #000;
   color: #fff;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  /* border: 2px solid #ffeb57; */
 }
+
 body {
-  /* background: rgba(30, 30, 30, 0.64); */
-  border-radius: 5px;
-  padding: 20px;
-  border: solid rgba(30, 30, 30, 0.64) 2px;
+  border-radius: 0.31rem;
+  padding: 1.25rem;
+  border: solid rgb(30, 30, 30) 0.125rem;
 }
 
 h1 {
   font-family: "Lora", "Courier New", monospace, serif;
-}
-
-h1 {
-  font-size: 23px;
+  font-size: 1.44rem;
   font-weight: 600;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   font-style: italic;
   text-transform: uppercase;
 }
 
 header {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -61,7 +57,7 @@ header {
 }
 
 main {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 #controls {
@@ -71,10 +67,15 @@ main {
 
 p,
 label {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 1.375rem;
+}
+
+.rem-wrapper {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 /* 
@@ -88,21 +89,21 @@ label {
 }
 
 #volume::-webkit-slider-runnable-track {
-  width: 300px;
-  height: 2px;
+  width: 18.75rem;
+  height: 0.125rem;
   background: #ddd;
   border: none;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
 }
 
 #volume::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 16px;
-  width: 16px;
+  height: 1rem;
+  width: 1rem;
   border-radius: 50%;
   background: #ff017b;
-  margin-top: -7px;
+  margin-top: -0.437rem;
 }
 
 #volume:focus::-webkit-slider-runnable-track {

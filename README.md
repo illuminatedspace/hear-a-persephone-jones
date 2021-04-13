@@ -16,15 +16,15 @@
 - [x] fix volume slider default value
 - [x] restyle/continue styling
 - [x] Set voice to be different by default
-- [ ] Refactor all px to REM
+- [x] Refactor all px to REM
 - [ ] Confirm permissions of every page in manifest
 - [ ] Doesn't have to be active tab
 - [ ] go through manifest options https://developer.chrome.com/extensions/manifest
 - [x] Use this font: "Lora","Courier New",monospace,serif
-- [ ] Write backstory
 
 ### BACKLOG
 
+- [ ] Write backstory
 - [ ] read game outcome
 - [!] add keyboard shortcut for opening popup (STUCK)
 - [ ] add button for opening options? (https://developer.chrome.com/extensions/manifest)
