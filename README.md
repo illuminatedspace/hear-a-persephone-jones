@@ -20,6 +20,7 @@
 - [ ] Confirm permissions of every page in manifest
 - [ ] Doesn't have to be active tab
 - [ ] go through manifest options https://developer.chrome.com/extensions/manifest
+- [ ] errors?
 - [x] Use this font: "Lora","Courier New",monospace,serif
 
 ### BACKLOG
