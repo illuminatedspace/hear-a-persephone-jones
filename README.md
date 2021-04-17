@@ -4,7 +4,7 @@
 
 - Listen to Persophone Jones give you an audio play by play of Blaseball games for your favorite team
 
-### Next Release
+### First Release
 
 - [x] play, pause buttons
 - [x] test pop up with screen reader
