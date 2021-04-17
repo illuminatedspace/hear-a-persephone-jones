@@ -1,16 +1,26 @@
 {
+  "manifest_version": 3,
   "name": "Blaseball with Persephone Jones",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "permissions": ["*://*/*", "activeTab", "declarativeContent", "storage", "webNavigation"],
+  "description": "Hear a play by play of Blaseball games with your favorite accidental announcer, Persephone Jones",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
   "options_page": "/options/options.html",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
-  "page_action": {
-    "default_popup": "/popup/popup.html",
-    "default_icon": "images/microphone.png"
-  },
-  "manifest_version": 2
+  "action": {
+    "default_icon": "images/microphone.png",
+    "default_title": "Click to open Blaseball Reader Menu",
+    "default_popup": "/popup/popup.html"
+  }
 }

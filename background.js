@@ -17,12 +17,11 @@ chrome.runtime.onInstalled.addListener(function () {
 });
 
 chrome.tabs.onUpdated.addListener(
-  function ( tabId, changeInfo, tab )
-  { 
-    if ( changeInfo.status === "complete" )
-    {
-      chrome.tabs.executeScript(tabId, {
-      file: "/scripts/onStart.js"
-    });
-  }
-});
+  function (tabId, changeInfo, tab) {
+    if (changeInfo.status === "complete") {
+      chrome.scripting.executeScript({
+        target: { tabId, allFrames: true },
+        files: ["/scripts/onStart.js"]
+      });
+    }
+  });
