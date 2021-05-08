@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/popup/popup.css" />
-  </head>
-  <body>
-    <header>
-      <h1 id="title">Play By Play</h1>
-      <h2 id="subtitle" class="highlight-text">with Persephone Jones</h2>
-    </header>
-    <main>
-      <div id="controls">
-        <button id="play" aria-label="play">
-          <div class="rem-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20">
-              <path d="m0,0l0,20l20,-10l-20,-10l0,0z" fill="currentColor" />
-            </svg>
-          </div>
-        </button>
-        <button id="pause" aria-label="stop">
-          <div class="rem-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20">
-              <rect height="20" width="20" fill="currentColor" />
-            </svg>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/popup/popup.css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Play By Play</h1>
+    <h2 id="subtitle" class="highlight-text">with Persephone Jones</h2>
+  </header>
+  <main>
+    <div id="controls">
+      <button id="play" aria-label="play">
+        <div class="rem-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20">
+            <path d="m0,0l0,20l20,-10l-20,-10l0,0z" fill="currentColor" />
+          </svg>
+        </div>
+      </button>
+      <button id="pause" aria-label="stop">
+        <div class="rem-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20">
+            <rect height="20" width="20" fill="currentColor" />
+          </svg>
           <div>
-        </button>
-        <label for="volume">Volume</label>
-        <input
-          id="volume"
-          type="range"
-          value="100"
-          min="0"
-          max="100"
-          step="5"
-        />
-      </div>
-      <!-- <button id="debug">Debug</button> -->
-    </main>
-    <script src="popup.js"></script>
-  </body>
+      </button>
+      <label for="volume">Volume</label>
+      <input id="volume" type="range" value="100" min="0" max="100" step="5" />
+    </div>
+    <button id="debug">Debug</button>
+  </main>
+  <script src="popup.js"></script>
+</body>
+
 </html>

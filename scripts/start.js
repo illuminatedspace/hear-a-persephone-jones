@@ -1,7 +1,7 @@
 console.log("PLAY");
 var acceptableVoices = ["Zira"];
 function filterVoices(voice) {
-  return acceptableVoices.some(function (voiceName) {return voice.name.includes(voiceName)});
+  return acceptableVoices.some(function (voiceName) { return voice.name.includes(voiceName) });
 }
 
 var lastLog = "";

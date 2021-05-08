@@ -1,15 +1,12 @@
 {
   "name": "Blaseball with Persephone Jones",
-  "version": "1.0",
+  "version": "0.1",
   "description": "Hear a play by play of Blaseball games with your favorite accidental announcer, Persephone Jones",
   "permissions": [
-    "*://*/*",
+    "*://blaseball.com/*",
     "activeTab",
-    "declarativeContent",
-    "storage",
-    "webNavigation"
+    "declarativeContent"
   ],
-  "options_page": "/options/options.html",
   "background": {
     "scripts": [
       "background.js"
